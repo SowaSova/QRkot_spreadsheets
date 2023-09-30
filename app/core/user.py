@@ -1,4 +1,3 @@
-# app/core/user.py
 import logging
 from typing import Optional, Union
 
@@ -49,7 +48,7 @@ class UserManager(IntegerIDMixin, BaseUserManager[User, int]):
     ) -> None:
         if len(password) < settings.min_password_len:
             raise InvalidPasswordException(
-                reason="Password should be at least 3 characters"
+                reason=f"Password should be at least {settings.min_password_len} characters"
             )
         if user.email in password:
             raise InvalidPasswordException(

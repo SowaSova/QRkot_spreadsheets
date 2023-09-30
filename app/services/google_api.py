@@ -3,10 +3,8 @@ from datetime import datetime
 
 from aiogoogle import Aiogoogle
 
-# В секретах лежит адрес вашего личного google-аккаунта
 from app.core.config import settings
 
-# Константа с форматом строкового представления времени
 FORMAT = "%Y/%m/%d %H:%M:%S"
 TABLE_NAME = "Отчет"
 SHEET_NAME = "Рейтинг"

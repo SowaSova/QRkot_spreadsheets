@@ -1,4 +1,3 @@
-# Подключаем классы асинхронной бибилиотеки
 from aiogoogle import Aiogoogle
 from aiogoogle.auth.creds import ServiceAccountCreds
 
